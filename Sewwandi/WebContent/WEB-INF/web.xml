@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+         <servlet> 
+         	 <servlet-name>AddEventServlet</servlet-name>
+        	 <servlet-class>Com.Sewwandi.Controller.AddEventServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>AddEventServlet</servlet-name>
+         <url-pattern>/insert</url-pattern>
+         </servlet-mapping>
+         
+         <servlet> 
+         	 <servlet-name>SelectEventDetailsServlet</servlet-name>
+        	 <servlet-class>Com.Sewwandi.Controller.SelectEventDetailsServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>SelectEventDetailsServlet</servlet-name>
+         <url-pattern>/retrieve</url-pattern>
+         </servlet-mapping>
+         
+           <servlet> 
+         	 <servlet-name>CheckAvailabilityServlet</servlet-name>
+        	 <servlet-class>Com.Sewwandi.Controller.CheckAvailabilityServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>CheckAvailabilityServlet</servlet-name>
+         <url-pattern>/available</url-pattern>
+         </servlet-mapping>
+         
+           <servlet> 
+         	 <servlet-name>UpdateEventServlet</servlet-name>
+        	 <servlet-class>Com.Sewwandi.Controller.UpdateEventServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>UpdateEventServlet</servlet-name>
+         <url-pattern>/update</url-pattern>
+         </servlet-mapping>
+         
+           <servlet> 
+         	 <servlet-name>DeleteEventServlet</servlet-name>
+        	 <servlet-class>Com.Sewwandi.Controller.DeleteEventServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>DeleteEventServlet</servlet-name>
+         <url-pattern>/delete</url-pattern>
+         </servlet-mapping>
+         
+         
+        <servlet> 
+         	 <servlet-name>AddMenuOrderServlet</servlet-name>
+        	 <servlet-class>Com.Sewwandi.Controller.AddMenuOrderServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>AddMenuOrderServlet</servlet-name>
+         <url-pattern>/insertmenu</url-pattern>
+         </servlet-mapping>
+ </web-app>

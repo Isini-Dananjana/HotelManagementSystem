@@ -1,0 +1,763 @@
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+
+}
+*:before, *:after { box-sizing:inherit }
+
+/* Basic styles */
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.42857143;
+    color: #555;
+    height: 100vh;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+a { text-decoration: none }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main { margin-top: 10rem;
+    text-align: center;
+}
+/* Header styles */
+header {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 7rem;
+    padding: 0 15px;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    width: 100%
+}
+
+.site-logo {
+
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.ok-header__logo:hover {color: #546edb}
+
+/* okayNav styles */
+body.okayNav-loaded {
+    overflow-x: hidden;
+}
+.okayNav:not(.loaded) {
+    visibility: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.okayNav ul {
+    /* We want two navigations - one hidden and one visible */
+    float: left;
+}
+.okayNav a {
+    /* Links general styling */
+    color: #2e2e33;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+.okayNav__nav--visible {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.okayNav__nav--visible li {
+    display: inline-block;
+}
+.okayNav__nav--visible a {
+    /* Link styling for the visible part of the nav */
+    display: block;
+    transition: color 200ms cubic-bezier(0.55, 0, 0.1, 1);
+    padding: 15px 15px;
+}
+.okayNav__nav--visible a:hover {
+    color: #546edb;
+}
+/* Link styling for the off-screen part of the nav */
+.okayNav__nav--invisible {
+    position: fixed;
+    top: 70px;
+    bottom: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background: #fff;
+}
+.okayNav__nav--invisible a {
+    background: #fff;
+    width: 240px;
+    display: block;
+    padding: 15px;
+}
+.okayNav__nav--invisible.nav-left {
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.okayNav__nav--invisible.nav-right {
+    right: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.okayNav__nav--invisible.transition-enabled {
+    transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+    transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+    transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+.okayNav__nav--invisible.nav-open {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+/* Kebab icon */
+.okayNav__menu-toggle {
+    position: relative;
+    transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+    transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+    transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    float: left;
+    z-index: 1;
+    top: 15px;
+}
+.okayNav__menu-toggle.okay-invisible {
+    position: absolute;
+    opacity: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+.okayNav__menu-toggle span {
+    display: block;
+    position: absolute;
+    margin: auto;
+    height: 4px;
+    width: 4px;
+    background: #2e2e33;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+.okayNav__menu-toggle span:nth-child(1) {
+    top: 0;
+}
+.okayNav__menu-toggle span:nth-child(2) {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.okayNav__menu-toggle span:nth-child(3) {
+    bottom: 0;
+}
+.okayNav__menu-toggle.icon--active {
+    /* Kebab icon when off-screen nav is open */
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.okayNav__menu-toggle.icon--active span {
+    background: #546edb;
+}
+
+.head{
+    color: white;
+    margin-left: 40px;
+
+
+}
+.head h1 span{
+    font-size: 50px;
+}
+
+.theme-btn{
+    padding: 15px 40px;
+    background-color: white;
+    color: #403f3f;
+    border: 0;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+}
+
+html {
+    height:100%;
+}
+.loginBox{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    padding: 80px 40px;
+
+}
+.userImage{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+
+}
+.loginBox h2{
+
+    margin: 0;
+    padding: 0 0 20px;
+    color: white;
+    text-align: center;
+
+}
+.loginBox p{
+
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+
+}
+.loginBox input{
+    width: 270px;
+    margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+::placeholder{
+    color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]{
+
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #1b89da;
+    cursor: pointer;
+    border-radius: 20px;
+
+
+}
+.loginBox input[type="submit"]:hover{
+
+    background: #418ef4;
+    color: #262626;
+
+}
+.loginBox a{
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 110px;
+}
+
+.registerBox{
+
+    position: absolute;
+    top: calc(50% + 280px);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    height: 920px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    padding: 80px 40px;
+    margin-bottom: 50px;
+    z-index: 1;
+
+}
+
+.registerBox .userImage{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+
+}
+.registerBox h2{
+
+    margin: 0;
+    padding: 0 0 20px;
+    color: white;
+    text-align: center;
+
+}
+.registerBox p{
+
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+
+}
+.registerBox input[type="text"],
+.registerBox input[type="number"],
+.registerBox input[type="email"],
+.registerBox input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    width: 470px;
+    margin-bottom: 20px;
+}
+::placeholder{
+    color: rgba(255,255,255,.5);
+}
+.registerBox input[type="submit"]{
+
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #1b89da;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 270px;
+    margin-left: 18%;
+}
+.registerBox input[type="submit"]:hover{
+
+    background: #418ef4;
+    color: #262626;
+
+}
+.registerBox select{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    width: 470px;
+    margin-bottom: 20px;
+
+}
+.registerBox option{
+    color: black;
+}
+
+.registerBox a{
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 200px;
+
+}
+
+.profileBox{
+
+    position: absolute;
+    top: calc(50% + 100px);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    height: 650px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    padding: 80px 40px;
+    margin-bottom: 50px;
+    overflow-y: scroll;
+
+}
+
+.profileBox::-webkit-scrollbar {
+    display: none;
+}
+
+.profileBox h2{
+
+    margin: 0;
+    padding: 0 0 20px;
+    color: white;
+    text-align: center;
+
+}
+.profileBox p{
+
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+
+}
+.profileBox input{
+    width: 470px;
+    margin-bottom: 20px;
+}
+.profileBox input[type="text"],
+.profileBox input[type="number"],
+.profileBox input[type="email"],
+.profileBox input[type="password"],
+.profileBox input[type="date"],
+.profileBox input[type="url"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+::placeholder{
+    color: rgba(255,255,255,.5);
+}
+.profileBox input[type="button"]{
+
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #1b89da;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 270px;
+    margin-left: calc(50% - 135px);
+}
+.profileBox input[type="button"]:hover{
+
+    background: #418ef4;
+    color: #262626;
+
+}
+.profileBox input[type="submit"]{
+
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #1b89da;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 270px;
+    margin-left: calc(50% - 135px);
+}
+.profileBox input[type="submit"]:hover{
+
+    background: #418ef4;
+    color: #262626;
+
+}
+.profileBox select{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    width: 470px;
+    margin-bottom: 20px;
+
+}
+.profileBox option{
+    color: black;
+}
+
+.profileBox a{
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 200px;
+
+}
+
+.contact {
+
+    width: 80%;
+    padding: 0 20px;
+    height: 500px;
+    background-color: rgba(255, 255, 255,.8);
+    margin-top: 30px;
+    margin-left: 12%;
+    position: absolute;
+
+}
+
+.contact .contact-text1{
+
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Pacifico' , cursive;
+    letter-spacing: 12px;
+    padding: 50px 0px;
+}
+
+.contact .contact-line {
+
+    border-top: 2px solid black;
+    width: 100%;
+    margin-top: -3%;
+}
+
+.contact .contact-text2{
+
+    text-align: center;
+    font-size: 20px;
+    font-family: "Palatino Linotype",  Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 4%;
+    font-weight: bold;
+
+}
+
+.contact .contact-text3{
+
+    text-align: center;
+    font-size: 24px;
+    font-family: "Palatino Linotype",  Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 1%;
+    font-weight: bold;
+
+}
+
+.contact .contact-links{
+    text-align: center;
+    font-family: "Palatino Linotype",  Helvetica, sans-serif;
+    font-size: 24px;
+    margin-top: 5%;
+}
+
+.contact .contact-links a{
+    padding: 0 20px;
+    color: black;
+}
+
+.contact .contact-links a:hover{
+    text-decoration: none;
+}
+
+.contact .contact-social{
+    text-align: center;
+    font-family: "Palatino Linotype",  Helvetica, sans-serif;
+    font-size: 27px;
+    margin-top: 5%;
+}
+
+.contact .contact-social img{
+    width: 30px;
+}
+
+.contact .contact-social a{
+    padding: 0 10px;
+}
+
+
+.profileBox .reservations .reservationTable{
+    border-collapse: collapse;
+    width: 460px;
+}
+
+.profileBox .reservations th,td{
+    color: white;
+    align: "center";
+}
+
+.profileBox .reservations .tableNew{
+    text-align: center;
+    border: 3px solid white;
+    height: 65px;
+}
+
+.userBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    box-sizing: border-box;
+    padding: 80px 40px;
+}
+
+.userBox input[type="text"],
+.userBox input[type="email"],
+.userBox input[type="tel"],
+.userBox input[type="number"],
+.userBox input[type="password"]{
+    width: 400px;
+    height: 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    padding: 0px 10px;
+}
+
+.userBox select{
+	width: 425px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    padding: 0px 10px;
+}
+
+.userBox p{
+    margin: 0;
+    padding: 0px 0px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.userBox input[type="submit"]{
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #0a84ff;
+    color: white;
+    border: none;
+    margin-left: 110px;
+    border-radius: 5px;
+}
+
+.userBox input[type="submit"]:hover{
+    background-color: #aaaaaa;
+
+}
+
+.userBox h1{
+    margin: 0;
+    padding: 0 0 10px;
+    color: #0a84ff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.userProfileBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    box-sizing: border-box;
+    padding: 80px 40px;
+}
+
+.userProfileBox input[type="text"],
+.userProfileBox input[type="email"],
+.userProfileBox input[type="tel"],
+.userProfileBox input[type="number"],
+.userProfileBox input[type="password"]{
+    width: 400px;
+    height: 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    padding: 0px 10px;
+}
+
+.userProfileBox p{
+    margin: 0;
+    padding: 0px 0px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.userProfileBox input[type="submit"]{
+    width: 400px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #0a84ff;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.userProfileBox input[type="submit"]:hover{
+    background-color: #aaaaaa;
+
+}
+
+.userProfileBox h1{
+    margin: 0;
+    padding: 0 0 20px;
+    color: white;
+    text-align: center;
+}
+
+.userBox .systemusers .systemusersTable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.userBox .systemusers th,td{
+    color: white;
+    align: "center";
+}
+
+.userBox .systemusers .tableTh{
+    text-align: center;
+    border: 3px solid white;
+    height: 65px;
+}

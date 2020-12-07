@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+
+#addEmpBody{
+	
+     
+    background-color : white;
+    margin-left:100px;     
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: left; 
+
+       
+}
+
+#title{
+	color:#006d96;
+	
+}
+
+.logText{
+    width: 500px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+     
+    
+}
+.Stext{
+    font-size: 16px;
+    color: #006d96;
+    
+}
+
+#fnameErro,
+#lnameErro, 
+#dateErro, 
+#genderErro, 
+#phoneErro, 
+#emailErro,
+#addressErro,
+#bSalErro{
+	color: red;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#submitbtn{
+	width: 500px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	
+}
+
+#leftNavi{
+	margin-top: 50px;
+}
+

@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+#tab{
+	float:left;
+	
+	width : 80%;
+	margin-top: 20px;
+	overflow: scroll;
+	height: 800px;
+	 
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.containerPackage{
+    width: 990px;
+    margin: 100px auto;
+    box-sizing: border-box;
+    margin-top: -300px;
+}
+
+.containerPackage .column{
+    width: 300px;
+    height: 580px;
+    float: left;
+    padding: 0 0 20px;
+    margin: 15px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255 , .8);
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    transition: .5s;
+}
+
+.containerPackage .column .title{
+    background: #68f788;
+    padding: 20px 0;
+}
+.containerPackage .column .title .fa{
+    color: #fff;
+    font-size: 60px;
+}
+.containerPackage .column .title h2{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.containerPackage .column .price{
+    padding: 10px;
+}
+.containerPackage .column .price h4{
+    margin: 0;
+    padding: 0;
+    color: #009688;
+    font-weight: 400;
+    font-size: 30px;
+}
+.containerPackage .column .price h4 span{
+    font-weight: 700;
+    font-size: 60px;
+}
+.containerPackage .column .option ul{
+    margin: 0;
+    padding: 0;
+    
+}
+.containerPackage .column .option ul li{
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    font-weight: 300;
+}
+.containerPackage .column .option ul li:last-child{
+    border-bottom: none;
+}
+.containerPackage .column .option ul li .fa-check-circle-o{
+    color: #4caf50;
+}
+.containerPackage .column .option ul li .fa-minus-circle{
+    color: #ed84c1;
+}
+.containerPackage .column a{
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #68f788;
+    color: #fff;
+    margin: 20px 0 10px;
+    display: inline-block;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.containerPackage .column:nth-child(2) .title,
+.containerPackage .column:nth-child(2) a{
+    background: #ffd761;
+}
+.containerPackage .column:hover{
+    transform: scale(1.05)
+}
+.containerPackage .column:nth-child(3) .title,
+.containerPackage .column:nth-child(3) a{
+    background: #ff87fc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

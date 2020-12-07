@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.14.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="att" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="87b90f9c-c476-4207-b308-66fe2dc7dc86">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="sewwandi"/>
+	<queryString language="SQL">
+		<![CDATA[select * from sewwandi.per_empattendan]]>
+	</queryString>
+	<field name="AttendanceId" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="AttendanceId"/>
+		<property name="com.jaspersoft.studio.field.label" value="AttendanceId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="employeeId" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="employeeId"/>
+		<property name="com.jaspersoft.studio.field.label" value="employeeId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="firstName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="firstName"/>
+		<property name="com.jaspersoft.studio.field.label" value="firstName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lastName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="lastName"/>
+		<property name="com.jaspersoft.studio.field.label" value="lastName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="section" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="section"/>
+		<property name="com.jaspersoft.studio.field.label" value="section"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="designation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="designation"/>
+		<property name="com.jaspersoft.studio.field.label" value="designation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="clockin" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.name" value="clockin"/>
+		<property name="com.jaspersoft.studio.field.label" value="clockin"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="clockout" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.name" value="clockout"/>
+		<property name="com.jaspersoft.studio.field.label" value="clockout"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="work_hrs" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.name" value="work_hrs"/>
+		<property name="com.jaspersoft.studio.field.label" value="work_hrs"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_OT" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.name" value="no_OT"/>
+		<property name="com.jaspersoft.studio.field.label" value="no_OT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="OT" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.name" value="OT"/>
+		<property name="com.jaspersoft.studio.field.label" value="OT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="basicSalary" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="basicSalary"/>
+		<property name="com.jaspersoft.studio.field.label" value="basicSalary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="per_empattendan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="AttendanceId">
+		<groupExpression><![CDATA[$F{AttendanceId}]]></groupExpression>
+	</group>
+	<group name="date">
+		<groupExpression><![CDATA[$F{date}]]></groupExpression>
+	</group>
+	<group name="employeeId">
+		<groupExpression><![CDATA[$F{employeeId}]]></groupExpression>
+	</group>
+	<group name="firstName">
+		<groupExpression><![CDATA[$F{firstName}]]></groupExpression>
+	</group>
+	<group name="lastName">
+		<groupExpression><![CDATA[$F{lastName}]]></groupExpression>
+	</group>
+	<group name="section">
+		<groupExpression><![CDATA[$F{section}]]></groupExpression>
+	</group>
+	<group name="designation">
+		<groupExpression><![CDATA[$F{designation}]]></groupExpression>
+	</group>
+	<group name="status">
+		<groupExpression><![CDATA[$F{status}]]></groupExpression>
+	</group>
+	<group name="clockin">
+		<groupExpression><![CDATA[$F{clockin}]]></groupExpression>
+	</group>
+	<group name="clockout">
+		<groupExpression><![CDATA[$F{clockout}]]></groupExpression>
+	</group>
+	<group name="work_hrs">
+		<groupExpression><![CDATA[$F{work_hrs}]]></groupExpression>
+	</group>
+	<group name="no_OT">
+		<groupExpression><![CDATA[$F{no_OT}]]></groupExpression>
+	</group>
+	<group name="OT">
+		<groupExpression><![CDATA[$F{OT}]]></groupExpression>
+	</group>
+	<group name="basicSalary">
+		<groupExpression><![CDATA[$F{basicSalary}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

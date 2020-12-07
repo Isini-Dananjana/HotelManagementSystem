@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.14.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Simple_Blue" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7ee67ca6-837e-4fdc-b006-a71e9111dcfd">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from room_reservation where cName = 'Sandali Wijekoon']]>
+	</queryString>
+	<field name="roomReservationId" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="roomReservationId"/>
+		<property name="com.jaspersoft.studio.field.label" value="roomReservationId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cName"/>
+		<property name="com.jaspersoft.studio.field.label" value="cName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="checkIn" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="checkIn"/>
+		<property name="com.jaspersoft.studio.field.label" value="checkIn"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="checkOut" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="checkOut"/>
+		<property name="com.jaspersoft.studio.field.label" value="checkOut"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="totRAmount" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="totRAmount"/>
+		<property name="com.jaspersoft.studio.field.label" value="totRAmount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="arrivalTime" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="arrivalTime"/>
+		<property name="com.jaspersoft.studio.field.label" value="arrivalTime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_of_adults" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="no_of_adults"/>
+		<property name="com.jaspersoft.studio.field.label" value="no_of_adults"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_of_kids" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="no_of_kids"/>
+		<property name="com.jaspersoft.studio.field.label" value="no_of_kids"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="roomNo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="roomNo"/>
+		<property name="com.jaspersoft.studio.field.label" value="roomNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="roomType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="roomType"/>
+		<property name="com.jaspersoft.studio.field.label" value="roomType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="phone_No" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="phone_No"/>
+		<property name="com.jaspersoft.studio.field.label" value="phone_No"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="room_reservation"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{roomReservationId}]]></groupExpression>
+		<groupHeader>
+			<band height="33">
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="100" height="32" forecolor="#666666" backcolor="#E6E6E6" uuid="2ef86388-5157-4005-9919-5764aa2567b3"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[roomReservationId]]></text>
+				</staticText>
+				<textField>
+					<reportElement mode="Opaque" x="100" y="0" width="455" height="32" forecolor="#006699" backcolor="#E6E6E6" uuid="dc835f68-c11b-47ae-bc40-4bd7bc794ecb"/>
+					<textElement>
+						<font size="24" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{roomReservationId}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="-20" y="32" width="595" height="1" forecolor="#666666" uuid="5e27d8b3-985e-4e94-85a3-730d12df0216"/>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[$F{cName}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement x="100" y="0" width="455" height="32" forecolor="#006699" uuid="f1ff47cb-5c50-460c-b6ab-b7b4c4b16650"/>
+					<textElement>
+						<font size="22" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{cName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="100" height="20" forecolor="#666666" uuid="1718f0d6-a7f8-41ee-8e5e-7966e2424e2a"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[cName]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group3">
+		<groupExpression><![CDATA[$F{checkIn}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement x="100" y="0" width="455" height="32" forecolor="#006699" uuid="8ba6b6bb-415a-4574-a14c-16559c676936"/>
+					<textElement>
+						<font size="20" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{checkIn}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="100" height="20" forecolor="#666666" uuid="530ce3b9-23e4-4b8d-ae04-08b53a37507b"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[checkIn]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group4">
+		<groupExpression><![CDATA[$F{checkOut}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement x="100" y="0" width="455" height="32" forecolor="#006699" uuid="74645374-739b-4927-a6ea-3c6dcefba905"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{checkOut}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="100" height="32" forecolor="#666666" uuid="9daed051-a777-4f26-bd2e-681034aaea81"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[checkOut]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="totRAmount">
+		<groupExpression><![CDATA[$F{totRAmount}]]></groupExpression>
+	</group>
+	<group name="arrivalTime">
+		<groupExpression><![CDATA[$F{arrivalTime}]]></groupExpression>
+	</group>
+	<group name="no_of_adults">
+		<groupExpression><![CDATA[$F{no_of_adults}]]></groupExpression>
+	</group>
+	<group name="no_of_kids">
+		<groupExpression><![CDATA[$F{no_of_kids}]]></groupExpression>
+	</group>
+	<group name="roomNo">
+		<groupExpression><![CDATA[$F{roomNo}]]></groupExpression>
+	</group>
+	<group name="roomType">
+		<groupExpression><![CDATA[$F{roomType}]]></groupExpression>
+	</group>
+	<group name="phone_No">
+		<groupExpression><![CDATA[$F{phone_No}]]></groupExpression>
+	</group>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="b7034d72-2085-4383-beaa-73f958cee84d"/>
+				<staticText>
+					<reportElement x="20" y="20" width="310" height="43" forecolor="#FFFFFF" uuid="307a3c0c-a064-43e2-8075-501a872bd248"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Hotel Sewwandi ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="437db471-2ecf-4d13-bda3-80cca06b667f"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Room reservation report]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="7d85bedf-efdf-4f71-864c-02634ecbc9d3"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="5384ae88-f909-4e61-ac43-a411dd73547c"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="d0aabbf0-b89c-44dc-9250-41296fcf2122"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="656872fd-be3d-4f11-a26c-74d66c38e630"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="6e8ab40b-4d27-40c5-bb45-674a34476e2b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+
+   
+    .container{
+   margin-left: 350px;
+   width : 500px;
+
+    }
+    
+   p,h1{
+    color : #F8F8FF;
+    }
+	
+	
+	
+	#top-div{
+	margin-top:120px;
+	margin-right:-170px;
+	}
+	
+	#bottom-div{
+	margin-top:50px;
+	margin-right:-170px;
+	}
+	
+	#leftNavi{
+	margin-top: 50px;
+	}
